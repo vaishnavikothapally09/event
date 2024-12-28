@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Registration Form</title>
+</head>
+<body>
+  <h1>Event Registration Form</h1>  
+  <h3>August 19, 2024 - 12:00pm to 4:00pm</h3>
+
+  <form onsubmit="return registerSuccess()">
+ 
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name" required>
+    <br><br>
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+   
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone">
+    <br><br>
+   
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address">
+    <br><br>
+   
+    <label for="organization">Organization:</label>
+    <input type="text" id="organization" name="organization">
+    <br><br>
+   
+    <label for="attendee-type">Attendee Type:</label>
+    <select id="attendee-type" name="attendee-type">
+      <option value="general">General</option>
+      <option value="vip">VIP</option>
+      <option value="speaker">Speaker</option>
+    </select>
+    <br><br>
+   
+    <input type="submit" value="Register">
+   
+  </form>
+
+  <script>
+    function registerSuccess() {
+      alert("Registered Successfully!");
+      return false; // Prevent form submission to server for demo purposes
+    }
+  </script>
+</body>
+</html>
